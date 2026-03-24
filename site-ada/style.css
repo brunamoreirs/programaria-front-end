@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    color: #222;
+    transition: background 0.4s, color 0.4s;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7a3db8;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #8e44ad;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+.card {
+    background: #ffffff;
+    color: #222;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-left: 6px solid #9b59b6;
+}
+
+.folder {
+    margin-top: 40px;
+    padding: 25px;
+    background: #ffffff;
+    border-left: 6px solid #9b59b6;
+    border-radius: 12px;
+}
+
+.links-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.links-inline {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.links-inline li a {
+    text-decoration: none;
+    background: #e8d9f3;
+    color: #5e3370;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links-inline li a:hover {
+    background: #9b59b6;
+    color: #fff;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px 10px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+.theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #9b59b6;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#theme-toggle:checked ~ .page {
+    background: #121212;
+    color: #eaeaea;
+}
+
+#theme-toggle:checked ~ .page h1,
+#theme-toggle:checked ~ .page h2,
+#theme-toggle:checked ~ .page h3 {
+    color: #cfa7ff;
+}
+
+#theme-toggle:checked ~ .page .card {
+    background: #1e1e1e;
+    color: #eaeaea;
+    border-left-color: #cfa7ff;
+}
+
+#theme-toggle:checked ~ .page .folder {
+    background: #1a1a1a;
+    border-left-color: #cfa7ff;
+}
+
+#theme-toggle:checked ~ .page .links-inline li a {
+    background: #2a2a2a;
+    color: #eaeaea;
+}
+
+#theme-toggle:checked ~ .page .links-inline li a:hover {
+    background: #cfa7ff;
+    color: #121212;
+}
+
+#theme-toggle:checked ~ .page footer {
+    border-top-color: #333;
+    color: #aaa;
+}
+
+.menu {
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    background: #e8d9f3;
+    color: #5e3370;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #9b59b6;
+    color: #fff;
+}
+
+#theme-toggle:checked ~ .page .menu a {
+    background: #2a2a2a;
+    color: #eaeaea;
+}
+
+#theme-toggle:checked ~ .page .menu a:hover {
+    background: #cfa7ff;
+    color: #121212;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #5e3370;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: #9b59b6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #7a3db8;
+}
+
+#theme-toggle:checked ~ .page form label {
+    color: #cfa7ff;
+}
+
+#theme-toggle:checked ~ .page form input,
+#theme-toggle:checked ~ .page form textarea {
+    background: #2a2a2a;
+    color: #eaeaea;
+    border: 1px solid #444;
+}
+
+#theme-toggle:checked ~ .page form button {
+    background: #cfa7ff;
+    color: #121212;
+}
+
+#theme-toggle:checked ~ .page form button:hover {
+    background: #b38cff;
+}
+
+.card + .folder,
+.folder + .card,
+.links-section + .card {
+    margin-top: 50px;
+}

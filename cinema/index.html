@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cinema de Memórias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico?v=2">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark">
+
+  <header class="topbar">
+    <nav class="nav-right">
+      <a href="#hero">Início</a>
+      <a href="#cinema">Catálogo</a>
+      <a href="#sobre">Sobre a Disney</a>
+      <a href="#memoria">Enviar Memória</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <img src="images/cinema-bg.png" class="hero-banner" alt="Cinema">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="ritual">Apague as luzes.</span>
+      <h1>Cinema de Memórias</h1>
+      <p class="subtitle">Alguns filmes não passam. Eles permanecem.</p>
+
+      <button class="ticket" id="enterCinema">Entrar no cinema</button>
+
+      <span class="ritual spaced">O filme vai começar.</span>
+    </div>
+  </section>
+
+  <div class="floating-controls">
+    <button id="themeToggle">🌗</button>
+    <button id="scrollTop">⬆</button>
+  </div>
+
+  <main>
+
+    <section id="cinema" class="gallery">
+
+      <div class="card" style="background-image:url('images/rei-leao.jpg')">
+        <div class="overlay">
+          <h2>O Rei Leão</h2>
+          <p>O passado pode doer, mas você pode fugir dele ou aprender com ele.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/nemo.jpg')">
+        <div class="overlay">
+          <h2>Procurando Nemo</h2>
+          <p>Você não pode proteger alguém do mundo inteiro.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/soul.jpg')">
+        <div class="overlay">
+          <h2>Soul</h2>
+          <p>A vida acontece enquanto você está vivendo.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/viva.jpg')">
+        <div class="overlay">
+          <h2>Viva – A Vida é uma Festa</h2>
+          <p>Ser lembrado é uma forma de continuar vivendo.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/up.jpg')">
+        <div class="overlay">
+          <h2>Up – Altas Aventuras</h2>
+          <p>A aventura continua, mesmo depois da dor.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/ratatouille.jpg')">
+        <div class="overlay">
+          <h2>Ratatouille</h2>
+          <p>O único limite é aquele que você aceita para si.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/alice.jpg')">
+        <div class="overlay">
+          <h2>Alice no País das Maravilhas</h2>
+          <p>Se você não sabe para onde quer ir, qualquer caminho serve.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/WALLE.jpg')">
+        <div class="overlay">
+          <h2>WALL·E</h2>
+          <p>Eu não quero sobreviver. Eu quero viver.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/stitch.jpg')">
+        <div class="overlay">
+          <h2>Lilo & Stitch</h2>
+          <p>Família é quem fica.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/mulan.png')">
+        <div class="overlay">
+          <h2>Mulan</h2>
+          <p>A flor que desabrocha na adversidade é a mais rara.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/carros.jpg')">
+        <div class="overlay">
+          <h2>Carros</h2>
+          <p>Não é só sobre vencer. É sobre o caminho.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image:url('images/kuzco.jpg')">
+        <div class="overlay">
+          <h2>A Nova Onda do Imperador</h2>
+          <p>Mudar começa quando aprendemos a olhar além de nós.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">
+          <img src="images/pillars/sentir.png" alt="Sentir">
+        </div>
+        <h3>Sentir</h3>
+        <p>Sentir é o primeiro passo para crescer. Medo, amor, tristeza e coragem não são fraquezas, são sinais de humanidade. Emoções não precisam ser escondidas, precisam ser vividas.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <img src="images/pillars/aprender.png" alt="Aprender">
+        </div>
+        <h3>Aprender</h3>
+        <p>Toda história ensina algo em silêncio. Através de escolhas, consequências e caminhos, aprendemos sobre empatia, identidade e amadurecimento.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <img src="images/pillars/lembrar.png" alt="Lembrar">
+        </div>
+        <h3>Lembrar</h3>
+        <p>Alguns filmes se misturam às nossas memórias. Crescem conosco. O que era desenho vira reflexão. Algumas histórias nunca nos deixam..</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-disney">
+      <h2>Sobre a Disney</h2>
+      <p>A Disney construiu seu legado contando histórias. Histórias sobre sentimentos, escolhas e caminhos que moldam quem somos.</p>
+      <p>Seus personagens erram, sentem medo, perdem e amadurecem. O aprendizado está no percurso, não apenas no final feliz.</p>
+      <p>Por isso, esses filmes atravessam gerações. Eles mudam com o tempo, porque nós também mudamos.</p>
+    </section>
+
+    <section class="folder">
+      <h3>🎬 Por que o cinema vira memória?</h3>
+      <ul class="memory-list">
+        <li>✨ Filmes marcam fases da nossa vida</li>
+        <li>🧠 Histórias criam lembranças emocionais</li>
+        <li>❤️ Personagens refletem quem somos</li>
+        <li>🎞️ Cada sessão deixa algo guardado</li>
+        <li>🌙 Algumas histórias nunca nos deixam</li>
+      </ul>
+    </section>
+
+    <section id="memoria" class="memory-box">
+      <h3>✨ Compartilhe sua memória</h3>
+      <p class="memory-text">Todo filme deixa algo. Qual história ficou com você?</p>
+
+      <form id="memoryForm">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Escreva sua memória..." required></textarea>
+        <button type="submit" class="send-btn">Enviar memória ✨</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="credits">
+    <p>
+      Obrigada por visitar este cinema.<br>
+      Talvez algum filme ainda tenha algo a te dizer.
+    </p>
+    <img src="images/disney.png" class="brand-logo" alt="Disney">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
